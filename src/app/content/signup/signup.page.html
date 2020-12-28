@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>S'inscrire</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="email" [(ngModel)]="dataUser.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nom d'utilisateur</ion-label>
+    <ion-input type="text" [(ngModel)]="dataUser.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Prénom</ion-label>
+    <ion-input type="text" [(ngModel)]="dataUser.firstName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nom</ion-label>
+    <ion-input type="text" [(ngModel)]="dataUser.lastName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Date de naissance</ion-label>
+    <ion-datetime value="2000-01-01" [(ngModel)]="dataUser.birthdate"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Age</ion-label>
+    <ion-input type="number" [(ngModel)]="dataUser.age"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">Mot de passe</ion-label>
+    <ion-input type="password" [(ngModel)]="dataUser.retype"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Confirmation Mot de Passe</ion-label>
+    <ion-input type="password" [(ngModel)]="dataUser.password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Adresse</ion-label>
+    <ion-input type="text" [(ngModel)]="dataUser.adress"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="signUp()" expand="block">S'inscrire</ion-button>
+</ion-content>
